@@ -50,11 +50,11 @@ My site will allow the user too access current cryto currency information via a 
 #### MVP 
 - Appending Data rendered data to page( price, image, percentage chage
 
--Dropdown list of Crypto coins
+- Dropdown list of Crypto coins
 
--Generate data from item selected on dropdown via API
+- Generate data from item selected on dropdown via API
 
--Generate Trending coin list via second API
+- Generate Trending coin list via second API
 
 #### PostMVP 
 
@@ -87,13 +87,14 @@ https://wireframe.cc/pUQIou
 | P.code/A.code setup                    | H        | 3 Hours        |               |             |
 | Set up API                             | H        | 2 Hours        |               |             |
 | Set up dropdown functionality          | H        | 3 hours        |               |             |
-| Actual code                            | H        | 3 Hours        |               |             |
-|  MVP                                   | H        | 3 Hours        |               |             |
+| Append rederlist data points to page   | H        | 3 Hours        |               |             |
+| Build and append trending coins list   | H        | 3 Hours        |               |             |
+| Create page asthetic CSS               | M        | 3 Hours        |               |             |
 | Initial Clickable Model                | H        | 3 Hours        |               |             |
-| Intial CSS                             | H        | 3 Hours        |               |             |
+| Style News Feed                        | M        | 2 Hours        |               |             |
 | Post MVP                               | L        | 3 Hours        |               |             |
-| Dial in CSS                            | M        | 3 Hours        |               |             |
-| Total                                  |          | 29 Hours       |               |             |
+| Render List CSS                        | M        | 3 Hours        |               |             |
+| Total                                  |          | 3 Hours        |               |             |
 ## Code Snippet
 
 
