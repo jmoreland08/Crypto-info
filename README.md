@@ -48,7 +48,7 @@ My site will allow the user too access current cryto currency information via a 
 ### MVP/PostMVP
 
 #### MVP 
--Form to sign up for newsletter
+- Appending Data rendered data to page( price, image, percentage chage
 
 -Dropdown list of Crypto coins
 
@@ -57,7 +57,6 @@ My site will allow the user too access current cryto currency information via a 
 -Generate Trending coin list via second API
 
 #### PostMVP 
-- Store data retrieved from form
 
 - Add third API for news feed
 
