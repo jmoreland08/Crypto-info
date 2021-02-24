@@ -1,0 +1,50 @@
+
+
+.top-page{
+  border-style: solid;
+  text-align: center;
+}
+body{
+  background-color: gold;
+}
+
+form{
+  background-color: aquamarine;
+  border-style: solid;
+  color:cadetblue;
+}
+.name{
+
+}
+
+.current-price{
+  color: red;
+  }
+
+ .price-change{
+
+ } 
+
+ .high{
+
+ }
+
+ .low{
+
+ }
+
+ .logo{
+   height: 50px;
+   width: 50px;
+ }
+
+#currency-info{
+  border-style: solid;
+}
+
+#hot-coins{
+  border-style: solid;
+}
+footer{
+  border-style: solid;
+}
