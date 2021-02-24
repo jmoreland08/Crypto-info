@@ -83,8 +83,8 @@ https://wireframe.cc/pUQIou
 ## Timeframes
 | Component                              | Priority | Estimated Time | Time Invested | Actual Time |
 |-------------------------------         |----------|----------------|---------------|-------------|
-| Core Structure                         | H        | 3 hours        |               |             |
-| P.code/A.code setup                    | H        | 3 Hours        |               |             |
+| Core Structure                         | H        | 3 hours        |       1 hour  |             |
+| P.code/A.code setup                    | H        | 3 Hours        |     3.5 hours |             |
 | Set up API                             | H        | 2 Hours        |               |             |
 | Set up dropdown functionality          | H        | 3 hours        |               |             |
 | Append rederlist data points to page   | H        | 3 Hours        |               |             |
