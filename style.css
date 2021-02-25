@@ -1,50 +1,126 @@
 
 
-.top-page{
-  border-style: solid;
-  text-align: center;
-}
+
 body{
-  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  height: 100vh;
+}
+.top-page{
+  display: flex;
+  border-style: solid;
+  border-color: red;
+  text-align: center;
+  height: 50px;
+  background: #f8ed56;
+  justify-content: center;
+  
+  
 }
 
 form{
   background-color: aquamarine;
   border-style: solid;
   color:cadetblue;
+  height: 30px;
+  align-content: space-around;
+  text-align: center;
+  
+}
+
+.containers{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  
+}
+
+#currency-info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1552057426-9f23e61fa7b1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=667&q=80");
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  width: 70%;
+  
+
+  
+
+
 }
 .name{
+  align-self: center;
+  background-color: darkgrey;
+  width: max-content;
+  opacity: 50%;
+  border-radius: 5px;
+  margin: 5px;
+  
 
 }
 
 .current-price{
-  color: red;
+  margin: 5px
+  /* color: red;
+  align-self: center;
+  background-color: darkgrey;
+  width: max-content;
+  opacity: 50%;
+  border-radius: 5px; */
   }
 
- .price-change{
-
- } 
-
- .high{
-
- }
-
- .low{
-
- }
-
- .logo{
-   height: 50px;
-   width: 50px;
- }
-
-#currency-info{
-  border-style: solid;
+.price-change{
+  margin: 5px
 }
+
+.high{
+  margin: 5px
+}
+
+.low{
+  margin: 5px;
+  border-radius: 5px;
+
+}
+
+.logo{
+  margin: 5px;
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+
+
 
 #hot-coins{
+  display: flex;
   border-style: solid;
+  width:25%;
+  background-image: url("https://images.unsplash.com/photo-1543005472-1b1d37fa4eae?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8ZmlyZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+  height: 400px;
+
+ 
 }
 footer{
+  position: absolute
+  bottom: 0;
+  height: 20px;
   border-style: solid;
+  
+
+
+}
+
+button{
+  background-color: ivory;
+  border-radius: 10px;
+}
+
+#select-currency{
+
+  background-color: lightseagreen;
 }
