@@ -18,7 +18,6 @@ async function getData(selectedCurrency) {
     const response = await axios.get(dataURL)
     const coin = response.data[0]
     showCoinInfo(coin)
-    
     return response
   } catch (err) {
     console.error(err)
@@ -44,38 +43,43 @@ async function getData(selectedCurrency) {
     }
   }
   
-  
-  
-  // async function getTrend() {
-  //   const trendURL = 'https://api.coingecko.com/api/v3/search/trending'
-  //   try {
-  //     const response = await axios.get(trendURL)
-  //     const trend = response.data[0]
-  //     showTrendInfo(trend)
-  //     console.log(trend)
-  //     return response
-
-  //   } catch (err) {
-  //     console.error(err)
-  //   }
-    
-  //   window.onload = function showTrendInfo(trend) {
-  //     console.log('here', trend)
-  //     const trendContainer = document.querySelector("#hot-coins")
-  //     console.log(trendContainer)
-  //     const trendInfo = `
-  //       <h1 class= trendName >Name: ${trend.name}</h1>
-  //       // <h2 class= currentPrice >Current Price: $${trend.current_price}</h2>
-  //       // <p class = priceChange >Price Change Last 24Hrs: $${trend.price_change_24h}</p>
-  //       // <p class = high >24Hr High: $${trend.high_24h}</p>
-  //       // <p class = low >24Hr Low: $${trend.low_24h}</p>
-  //     `
-  //     trendContainer.insertAdjacentHTML('beforeend', trendInfo)
-  //     console.log('trend', trendInfo)
-  //   }
-
-  // }
-  // getTrend()
-
-
 }
+
+  async function getTrend() {
+    const trendURL = 'https://api.coingecko.com/api/v3/search/trending'
+    try {
+      const response = await axios.get(trendURL)
+      const trend = response.data.coins
+      showTrendInfo(trend)
+      // console.log("response", response)
+      // console.log('name', trend[0].item.name)
+      console.log(trend)
+      return response
+      } catch (err) {
+      console.error(err)
+    }
+    // getTrend(trend)
+    
+  
+    function showTrendInfo(trend) {
+      // console.log('windowFunc', trend)
+      const trendContainer = document.querySelector("#hot-coins")
+      const trendInfo = `
+        <p class='trendName1'>${trend[0].item.name}</p>
+        <p class='trendName2'>${trend[1].item.name}</p>
+        <p class='trendName3'>${trend[2].item.name}</p>
+        <p class='trendName4'>${trend[3].item.name}</p>
+        <p class='trendName5'>${trend[4].item.name}</p>
+        <p class='trendName6'>${trend[5].item.name}</p>
+      `
+      trendContainer.insertAdjacentHTML('beforeend', trendInfo)
+      console.log('trend', trend)
+    
+    }
+    
+  }
+getTrend()
+  
+
+
+
