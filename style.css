@@ -27,7 +27,7 @@ body{
 
 
 form{
-  color:cadetblue;
+  color:rgb(162, 199, 200);
   height: 30px;
   align-content: space-around;
   text-align: center;
@@ -149,14 +149,34 @@ margin-top: 50px;
   border-radius: 3px;
   height: 400px;
   background-image: url("https://images.unsplash.com/photo-1587302301133-7a3aa8bbce87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fG5ld3N8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
-  
   background-repeat: no-repeat;
   background-position: center;
   width: 25%;
   flex-basis: 1;
   font:larger;
+  font-size: 30px;
+ 
  
 }
+.news1{
+color:white;
+margin: 10px;
+font-size: 15px;
+font: bolder;
+}
+.news2{
+color: white;
+margin:10px;
+font-size: 15px;
+font: bolder;
+}
+.news3{
+color: white;
+margin: 10px;
+font-size: 15px;
+font: bolder;
+}
+
 footer{
   position: absolute
   bottom: 0;
@@ -174,8 +194,9 @@ button{
 
 #select-currency{
 
-  background-color: rgb(147, 199, 196);
+  background-color: rgb(178, 233, 230);
   border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 600px){
   
@@ -186,6 +207,9 @@ button{
     background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=60");
     background-repeat: repeat-y;
     /* background-size: 100vw; */
+  }
+  .top-page{
+    font-size: 30px;
   }
     .containers{
   display: flex;
@@ -262,9 +286,8 @@ button{
   flex-wrap: wrap;
   order: 3;
   width: 100%;
- 
-  
- 
+  cont
+   
 }
 
 }

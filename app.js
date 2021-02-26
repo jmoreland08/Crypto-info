@@ -27,10 +27,10 @@ async function getData(selectedCurrency) {
     const coinContainer = document.querySelector("#currency-info")
     const coinInfo = `
       <h1 class= name >${coin.name}</h1>
-      <h2 class= current-price >Current Price: $${coin.current_price}</h2>
-      <p class = price-change >Price Change Last 24Hrs: $${coin.price_change_24h}</p>
-      <p class = high >24Hr High: $${coin.high_24h}</p>
-      <p class = low >24Hr Low: $${coin.low_24h}</p>
+      <h2 class= current-price>Current Price: $${coin.current_price}</h2>
+      <p class = price-change>Price Change Last 24Hrs: $${coin.price_change_24h}</p>
+      <p class = high>24Hr High: $${coin.high_24h}</p>
+      <p class = low>24Hr Low: $${coin.low_24h}</p>
       <img src = "${coin.image}" alt="logo" class="logo"/>
       `
     coinContainer.insertAdjacentHTML('beforeend', coinInfo)
@@ -59,8 +59,9 @@ async function getData(selectedCurrency) {
   
     function showTrendInfo(trend) {
       const trendContainer = document.querySelector("#hot-coins")
+      
       const trendInfo = `
-        <a class='trendName1'>${trend[0].item.name}</p>
+        <p class='trendName1'>${trend[0].item.name}</p>
         <p class='trendName2'>${trend[1].item.name}</p>
         <p class='trendName3'>${trend[2].item.name}</p>
         <p class='trendName4'>${trend[3].item.name}</p>
@@ -94,29 +95,30 @@ const options = {
   }
 };
 
-// async function getNews () {
-//   try {
-//     const response = await axios(options)
-//     const news = response.data.value
-//     console.log('news', news)
-//     showNewsInfo(news)
-//     return response
+async function getNews () {
+  try {
+    const response = await axios(options)
+    const news = response.data.value
+    console.log('news', news)
+    showNewsInfo(news)
+    return response
     
-//     } catch (err) {
-//     console.error(err)
-//   }
+    } catch (err) {
+    console.error(err)
+  }
   
 
-//   function showNewsInfo(news) {
-//     const newsContainer = document.querySelector("#news")
-//     const newsInfo = `
-//       <p class='news1'>${news[0].title, news[0].description}</p>
-//       <p class='news2'>${news[1].title, news[1].description}</p>
-      
-//     `
-//     newsContainer.insertAdjacentHTML('beforeend', newsInfo)
-//   console.log(newsContainer)
-//   }
+  function showNewsInfo(news) {
+    const newsContainer = document.querySelector("#news")
+    const newsInfo = `
+      <a href =${news[0].url} class='news1'>${news[0].title, news[0].description}</a>
+      <a href =${news[1].url} class='news2'>${news[1].title, news[1].description}</a>
+      <a href =${news[2].url} class='news3'>${news[2].title, news[2].description}</a>
+    `
+    console.log(news[0].url)
+    newsContainer.insertAdjacentHTML('beforeend', newsInfo)
+  console.log(newsContainer)
+  }
   
-// }
-// getNews()
+}
+getNews()
