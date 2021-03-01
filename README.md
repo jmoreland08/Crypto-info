@@ -96,7 +96,15 @@ https://wireframe.cc/pUQIou
 | Render List CSS                        | M        | 3 Hours        |       2 hours |             |
 | Total                                  |          | 3 Hours        |         26.5  |             |
 ## Code Snippet
+I'm proud of this code because of the difficulty the API gave me.
 
-
+function showNewsInfo(news) {
+    const newsContainer = document.querySelector("#news")
+    const newsInfo = `
+    <a href =${news[0].url} class='news1'>${news[0].title, news[0].description}</a>
+    <a href =${news[1].url} class='news2'>${news[1].title, news[1].description}</a>
+    <a href =${news[2].url} class='news3'>${news[2].title, news[2].description}</a>
+    `
+    
 ## Change Log
    
