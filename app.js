@@ -1,5 +1,5 @@
 
-
+// Gets selected coin from dropdown on click
 function getValue(e) {
   e.preventDefault()
   const selectedCurrency = document.querySelector('#select-currency').value
@@ -10,7 +10,7 @@ function getValue(e) {
 
 const form = document.querySelector('form')
 form.addEventListener('submit', getValue)
-
+// Pulls selected coin from API
 async function getData(selectedCurrency) {
   const dataURL = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${selectedCurrency}`
   try {
@@ -23,7 +23,7 @@ async function getData(selectedCurrency) {
     console.error(err)
   }
   function showCoinInfo(coin) {
-  
+  // defines data to be displayed about selected coin
     const coinContainer = document.querySelector("#currency-info")
     const coinInfo = `
       <h1 class= name >${coin.name}</h1>
@@ -33,9 +33,11 @@ async function getData(selectedCurrency) {
       <p class = low>24Hr Low: $${coin.low_24h}</p>
       <img src = "${coin.image}" alt="logo" class="logo"/>
       `
+    //appends coin data to HTML
     coinContainer.insertAdjacentHTML('beforeend', coinInfo)
   }
-
+  
+// removes previous coin selection
   function removeInfo() {
     const coinContainer = document.querySelector("#currency-info")
     while (coinContainer.lastChild) {
@@ -44,7 +46,7 @@ async function getData(selectedCurrency) {
   }
   
 }
-
+// Pulls coin names that have been trending in the lasst 24 hours
   async function getTrend() {
     const trendURL = 'https://api.coingecko.com/api/v3/search/trending'
     try {
@@ -56,7 +58,7 @@ async function getData(selectedCurrency) {
       console.error(err)
     }
     
-  
+  // Function that displays and appends current trending coins
     function showTrendInfo(trend) {
       const trendContainer = document.querySelector("#hot-coins")
       
@@ -78,7 +80,7 @@ getTrend()
 
 
 const options = {
-  
+  // Third API URL for news headlines
   method: 'GET',
   url: 'https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI',
   params: {
@@ -99,7 +101,7 @@ async function getNews () {
   try {
     const response = await axios(options)
     const news = response.data.value
-    console.log('news', news)
+
     showNewsInfo(news)
     return response
     
@@ -107,17 +109,15 @@ async function getNews () {
     console.error(err)
   }
   
-
+// gets and appends top 3 news headlines
   function showNewsInfo(news) {
     const newsContainer = document.querySelector("#news")
     const newsInfo = `
-      <a href =${news[0].url} class='news1'>${news[0].title, news[0].description}</a>
-      <a href =${news[1].url} class='news2'>${news[1].title, news[1].description}</a>
-      <a href =${news[2].url} class='news3'>${news[2].title, news[2].description}</a>
+    <a href =${news[0].url} class='news1'>${news[0].title, news[0].description}</a>
+    <a href =${news[1].url} class='news2'>${news[1].title, news[1].description}</a>
+    <a href =${news[2].url} class='news3'>${news[2].title, news[2].description}</a>
     `
-    console.log(news[0].url)
-    newsContainer.insertAdjacentHTML('beforeend', newsInfo)
-  console.log(newsContainer)
+  newsContainer.insertAdjacentHTML('beforeend', newsInfo)
   }
   
 }

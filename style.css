@@ -73,7 +73,7 @@ form{
   background-color: grey;
   opacity: 75%;
   border-radius:5px;
-  }
+}
 
 .price-change{
   margin: 5px
@@ -110,7 +110,7 @@ form{
   text-decoration: underline;
   font-weight: bold;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
+
 }
 .trendName1{
 font-size: 22px;
@@ -155,36 +155,43 @@ margin-top: 50px;
   flex-basis: 1;
   font:larger;
   font-size: 30px;
- 
- 
+
 }
 .news1{
 color:white;
 margin: 10px;
 font-size: 15px;
 font: bolder;
+background-color: grey;
+  opacity: 75%;
+  border-radius:5px;
 }
 .news2{
 color: white;
 margin:10px;
 font-size: 15px;
 font: bolder;
+background-color: grey;
+opacity: 75%;
+border-radius:5px;
 }
 .news3{
 color: white;
 margin: 10px;
 font-size: 15px;
 font: bolder;
+background-color: grey;
+  opacity: 75%;
+  border-radius:5px;
 }
 
 footer{
+  display: flex;
   position: absolute
   bottom: 0;
   height: 20px;
   border-style: solid;
-  
-
-
+  justify-content: center;
 }
 
 button{
@@ -206,7 +213,7 @@ button{
     height: 100vh;
     background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=60");
     background-repeat: repeat-y;
-    /* background-size: 100vw; */
+  
   }
   .top-page{
     font-size: 30px;
@@ -232,7 +239,7 @@ button{
   margin-left: 0;
   width: 100%;
   
-  }
+}
 
 .name{
   align-self: center;
@@ -249,7 +256,7 @@ button{
 .current-price{
   margin: 5px
   border-radius: 5px;
-  }
+}
 
 .price-change{
   margin: 5px
@@ -286,8 +293,7 @@ button{
   flex-wrap: wrap;
   order: 3;
   width: 100%;
-  cont
-   
+  background-size: cover;
+  
 }
-
 }
