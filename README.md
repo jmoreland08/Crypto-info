@@ -85,16 +85,16 @@ https://wireframe.cc/pUQIou
 |-------------------------------         |----------|----------------|---------------|-------------|
 | Core Structure                         | H        | 3 hours        |       1 hour  |             |
 | P.code/A.code setup                    | H        | 3 Hours        |     3.5 hours |             |
-| Set up API                             | H        | 2 Hours        |               |             |
-| Set up dropdown functionality          | H        | 3 hours        |               |             |
-| Append rederlist data points to page   | H        | 3 Hours        |               |             |
-| Build and append trending coins list   | H        | 3 Hours        |               |             |
-| Create page asthetic CSS               | M        | 3 Hours        |               |             |
-| Initial Clickable Model                | H        | 3 Hours        |               |             |
-| Style News Feed                        | M        | 2 Hours        |               |             |
-| Post MVP                               | L        | 3 Hours        |               |             |
-| Render List CSS                        | M        | 3 Hours        |               |             |
-| Total                                  |          | 3 Hours        |               |             |
+| Set up API                             | H        | 2 Hours        |       6 hrs   |             |
+| Set up dropdown functionality          | H        | 3 hours        |       2 hour  |             |
+| Append rederlist data points to page   | H        | 3 Hours        |       30 mins |             |
+| Build and append trending coins list   | H        | 3 Hours        |        1 hr   |             |
+| Create page asthetic CSS               | M        | 3 Hours        |        6 hrs  |             |
+| Initial Clickable Model                | H        | 3 Hours        |        2 hrs  |             |
+| Style News Feed                        | M        | 2 Hours        |       30 min  |             |
+| Post MVP                               | L        | 3 Hours        |       2 hours |             |
+| Render List CSS                        | M        | 3 Hours        |       2 hours |             |
+| Total                                  |          | 3 Hours        |         26.5  |             |
 ## Code Snippet
 
 
