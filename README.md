@@ -5,7 +5,7 @@ Crypto-Info
 https://jmoreland08.github.io/Crypto-info/
 
 ## Project Description
-My site will allow the user too access current cryto currency information via a drop down menu as well as provide other relevent information relating to cryto currencies. It will be built desktop first.
+My site will allow the user too access current crypto currency information via a drop down menu as well as provide other relevent information relating to cryto currencies. It will be built desktop first.
 
 ## API and Data Sample
 ``` https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=litecoin
